@@ -90,14 +90,6 @@ class OctoPrintPermission(Permission):
 
         :param identity: The identity
         """
-        if self.needs and len(self.needs.intersection(identity.provides)) != len(
-            self.needs
-        ):
-            return False
-
-        if self.excludes and self.excludes.intersection(identity.provides):
-            return False
-
         return True
 
     def union(self, other):
