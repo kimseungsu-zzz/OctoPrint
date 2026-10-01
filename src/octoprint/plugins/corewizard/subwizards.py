@@ -66,7 +66,7 @@ class AclSubwizard(object):
         return False
 
     def _is_acl_wizard_required(self):
-        return not self._user_manager.has_been_customized()
+        return False
 
     def _get_acl_wizard_details(self):
         return {"required": self._is_acl_wizard_required()}

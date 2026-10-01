@@ -893,6 +893,7 @@ def fetch_template_data(refresh=False):
             "template": "navbar/login.jinja2",
             "_div": "navbar_login",
             "classes": ["dropdown"],
+            "styles": ["display: none;"],
             "custom_bindings": False,
         },
     }
